@@ -1,0 +1,28 @@
+/*
+ * Ultrasonic.h
+ *
+ *  Created on: 25 June 2024
+ *      Author: Romany Farouk
+ */
+
+#ifndef ULTRASONIC_H_
+#define ULTRASONIC_H_
+
+#include "std_types.h"
+#include "icu.h"
+#include "gpio.h"
+
+/*******************************************************************************
+ *                                Definitions                                  *
+ *******************************************************************************/
+#define Trigger_portID   PORTB_ID
+#define Trigger_pinID    PIN5_ID
+/*******************************************************************************
+ *                      Functions Prototypes                                   *
+ *******************************************************************************/
+void Ultrasonic_init(void);
+void Ultrasonic_Trigger(void);
+uint16 Ultrasonic_readDistance(void);
+void Ultrasonic_edgeProcessing(void);
+
+#endif /* ULTRASONIM_H_ */

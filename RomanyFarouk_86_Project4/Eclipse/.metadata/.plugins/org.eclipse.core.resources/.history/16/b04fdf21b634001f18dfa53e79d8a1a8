@@ -1,0 +1,24 @@
+/*
+ * Ultrasonic.c
+ *
+ *  Created on: 25 June 2024
+ *      Author: Romany Farouk
+ */
+
+#include "Ultrasonic.h"
+
+void Ultrasonic_init(void) {
+	/* Initialize ICU (Input Capture Unit) for measuring pulse width */
+	ICU_ConfigType ICU_configured = { F_CPU_8, RAISING };
+	ICU_init(&ICU_configured);
+	/* Setup the ICU call back function */
+	ICU_setCallBack(Ultrasonic_edgeProcessing);
+	/* Setup the direction for the trigger pin as output pin through the GPIO driver */
+	GPIO_setupPinDirection(Trigger_portID, Trigger_pinID, PIN_OUTPUT);
+}
+
+void Ultrasonic_Trigger(void) {
+	GPIO_writePin(Trigger_portID, Trigger_pinID, LOGIC_HIGH);
+	_delay_ms(2);
+	GPIO_writePin(Trigger_portID, Trigger_pinID, LOGIC_LOW);
+}

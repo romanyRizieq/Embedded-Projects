@@ -1,0 +1,37 @@
+/*
+ * Ultrasonic.h
+ *
+ *  Created on: 25 June 2024
+ *      Author: Romany Farouk
+ */
+
+#ifndef ULTRASONIC_H_
+#define ULTRASONIC_H_
+
+#include "std_types.h"
+#include "icu.h"
+#include "gpio.h"
+
+/*******************************************************************************
+ *                                Definitions                                  *
+ *******************************************************************************/
+
+#define Trigger_portID   PORTB_ID
+#define Trigger_pinID    PIN5_ID
+
+/*******************************************************************************
+ *                      Functions Prototypes                                   *
+ *******************************************************************************/
+
+/*
+ * Description:
+ * Init the sensor's channel for the adc.
+ * */
+void LM35_init(void);
+/*
+ * Description :
+ * Function responsible for calculate the temperature from the ADC digital value.
+ */
+uint8 LM35_getTemperature(void);
+
+#endif /* ULTRASONIM_H_ */

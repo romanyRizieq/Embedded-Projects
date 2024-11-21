@@ -1,0 +1,33 @@
+/*
+ * Ultrasonic.h
+ *
+ *  Created on: 25 June 2024
+ *      Author: Romany Farouk
+ */
+
+#ifndef ULTRASONIC_H_
+#define ULTRASONIC_H_
+
+#include <util/delay.h> /* For the delay functions */
+#include "std_types.h"
+#include "icu.h"
+#include "gpio.h"
+
+/*******************************************************************************
+ *                                Definitions                                  *
+ *******************************************************************************/
+#define Trigger_portID   PORTB_ID
+#define Trigger_pinID    PIN5_ID
+
+static volatile uint16 pulse_width = 0;
+static volatile uint16 distance_cm = 0;
+static volatile uint8 count = 0;
+/*******************************************************************************
+ *                      Functions Prototypes                                   *
+ *******************************************************************************/
+void Ultrasonic_init(void);
+void Ultrasonic_Trigger(void);
+uint16 Ultrasonic_readDistance(void);
+void Ultrasonic_edgeProcessing(void);
+
+#endif /* ULTRASONIM_H_ */

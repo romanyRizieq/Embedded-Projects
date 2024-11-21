@@ -1,0 +1,30 @@
+/*
+ * Project4.c
+ *
+ *  Created on: 25 June 2024
+ *      Author: Romany Farouk
+ */
+
+#include <avr/io.h>
+#include <avr/interrupt.h>
+#include "gpio.h"
+#include "icu.h"
+#include "lcd.h"
+#include "Ultrasonic.h"
+
+int main(void) {
+
+	LCD_init(); /* initialize LCD driver */
+	/*initial messages on the screen*/
+	LCD_displayString("Distance =  cm");
+	LCD_moveCursor(0,10);
+	Ultrasonic_init();
+	SREG |= (1<<7);
+
+	while (1) {
+		LCD_intgerToString(Ultrasonic_readDistance());
+		_delay_ms(100); // Delay for stability
+	}
+
+	return 0;
+}

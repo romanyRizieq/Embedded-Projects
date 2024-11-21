@@ -1,0 +1,3000 @@
+17:38:39 **** Incremental Build of configuration Debug for project MiniProject3 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MiniProject3.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9716 bytes (29.7% Full)
+(.text + .data + .bootloader)
+
+Data:        294 bytes (14.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+21:41:43 **** Clean-only build of configuration Debug for project MiniProject4 ****
+make clean 
+rm -rf  MiniProject3.hex  ./PWM.o ./Project3.o ./adc.o ./dc_motor.o ./gpio.o ./lcd.o ./lm35_sensor.o  sizedummy  MiniProject3.lss  ./PWM.d ./Project3.d ./adc.d ./dc_motor.d ./gpio.d ./lcd.d ./lm35_sensor.d  MiniProject3.elf
+ 
+21:41:44 **** Build of configuration Debug for project MiniProject4 ****
+make all 
+Building file: ../Project4.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"Project4.d" -MT"Project4.o" -c -o "Project4.o" "../Project4.c"
+In file included from ../Project4.c:13:
+../Ultrasonic.h:8:1: error: unterminated #ifndef
+../Project4.c: In function 'main':
+../Project4.c:28: error: 'temp' undeclared (first use in this function)
+../Project4.c:28: error: (Each undeclared identifier is reported only once
+../Project4.c:28: error: for each function it appears in.)
+../Project4.c:28: warning: implicit declaration of function 'LM35_getTemperature'
+../Project4.c:37: warning: implicit declaration of function 'DcMotor_Rotate'
+../Project4.c:37: error: 'STOP' undeclared (first use in this function)
+../Project4.c:44: error: 'CW' undeclared (first use in this function)
+../Project4.c:72: warning: implicit declaration of function '_delay_ms'
+make: *** [Project4.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+22:22:25 **** Incremental Build of configuration Debug for project MiniProject4 ****
+make all 
+Building file: ../Project4.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"Project4.d" -MT"Project4.o" -c -o "Project4.o" "../Project4.c"
+In file included from ../Project4.c:13:
+../Ultrasonic.h:8:1: error: unterminated #ifndef
+../Project4.c: In function 'main':
+../Project4.c:28: error: 'temp' undeclared (first use in this function)
+../Project4.c:28: error: (Each undeclared identifier is reported only once
+../Project4.c:28: error: for each function it appears in.)
+../Project4.c:28: warning: implicit declaration of function 'LM35_getTemperature'
+../Project4.c:37: warning: implicit declaration of function 'DcMotor_Rotate'
+../Project4.c:37: error: 'STOP' undeclared (first use in this function)
+../Project4.c:44: error: 'CW' undeclared (first use in this function)
+../Project4.c:72: warning: implicit declaration of function '_delay_ms'
+make: *** [Project4.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+22:24:11 **** Incremental Build of configuration Debug for project MiniProject4 ****
+make all 
+Building file: ../Project4.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"Project4.d" -MT"Project4.o" -c -o "Project4.o" "../Project4.c"
+In file included from ../Project4.c:13:
+../Ultrasonic.h:8:1: error: unterminated #ifndef
+../Project4.c: In function 'main':
+../Project4.c:27: warning: implicit declaration of function '_delay_ms'
+make: *** [Project4.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+22:25:48 **** Incremental Build of configuration Debug for project MiniProject4 ****
+make all 
+Building file: ../Project4.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"Project4.d" -MT"Project4.o" -c -o "Project4.o" "../Project4.c"
+In file included from ../Project4.c:13:
+../Ultrasonic.h:8:1: error: unterminated #ifndef
+../Project4.c: In function 'main':
+../Project4.c:27: warning: implicit declaration of function '_delay_ms'
+make: *** [Project4.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+22:27:01 **** Incremental Build of configuration Debug for project MiniProject4 ****
+make all 
+Building file: ../Project4.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"Project4.d" -MT"Project4.o" -c -o "Project4.o" "../Project4.c"
+../Project4.c: In function 'main':
+../Project4.c:27: warning: implicit declaration of function '_delay_ms'
+Finished building: ../Project4.c
+ 
+Building file: ../Ultrasonic.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"Ultrasonic.d" -MT"Ultrasonic.o" -c -o "Ultrasonic.o" "../Ultrasonic.c"
+../Ultrasonic.c: In function 'Ultrasonic_Trigger':
+../Ultrasonic.c:28: warning: implicit declaration of function '_delay_us'
+../Ultrasonic.c: In function 'Ultrasonic_readDistance':
+../Ultrasonic.c:37: warning: implicit declaration of function '_delay_ms'
+Finished building: ../Ultrasonic.c
+ 
+Building file: ../gpio.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"gpio.d" -MT"gpio.o" -c -o "gpio.o" "../gpio.c"
+Finished building: ../gpio.c
+ 
+Building file: ../icu.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"icu.d" -MT"icu.o" -c -o "icu.o" "../icu.c"
+../icu.c: In function 'ICU_setCallBack':
+../icu.c:73: warning: function return types not compatible due to 'volatile'
+Finished building: ../icu.c
+ 
+Building file: ../lcd.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"lcd.d" -MT"lcd.o" -c -o "lcd.o" "../lcd.c"
+In file included from ../lcd.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../lcd.c
+ 
+Building target: MiniProject4.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,MiniProject4.map -mmcu=atmega32 -o "MiniProject4.elf"  ./Project4.o ./Ultrasonic.o ./gpio.o ./icu.o ./lcd.o   
+./Project4.o: In function `main':
+../Project4.c:27: undefined reference to `_delay_ms'
+./Ultrasonic.o: In function `Ultrasonic_init':
+../Ultrasonic.c:18: undefined reference to `_delay_us'
+../Ultrasonic.c:17: undefined reference to `_delay_ms'
+make: *** [MiniProject4.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+22:27:54 **** Incremental Build of configuration Debug for project MiniProject4 ****
+make all 
+Building file: ../Project4.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"Project4.d" -MT"Project4.o" -c -o "Project4.o" "../Project4.c"
+In file included from ../Ultrasonic.h:11,
+                 from ../Project4.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../Project4.c
+ 
+Building file: ../Ultrasonic.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"Ultrasonic.d" -MT"Ultrasonic.o" -c -o "Ultrasonic.o" "../Ultrasonic.c"
+In file included from ../Ultrasonic.h:11,
+                 from ../Ultrasonic.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../Ultrasonic.c
+ 
+Building target: MiniProject4.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,MiniProject4.map -mmcu=atmega32 -o "MiniProject4.elf"  ./Project4.o ./Ultrasonic.o ./gpio.o ./icu.o ./lcd.o   
+Finished building target: MiniProject4.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S MiniProject4.elf  >"MiniProject4.lss"
+Finished building: MiniProject4.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex MiniProject4.elf  "MiniProject4.hex"
+Finished building: MiniProject4.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MiniProject4.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10102 bytes (30.8% Full)
+(.text + .data + .bootloader)
+
+Data:        287 bytes (14.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:30:22 **** Incremental Build of configuration Debug for project MiniProject4 ****
+make all 
+Building file: ../Project4.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"Project4.d" -MT"Project4.o" -c -o "Project4.o" "../Project4.c"
+In file included from ../Ultrasonic.h:11,
+                 from ../Project4.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../Project4.c
+ 
+Building target: MiniProject4.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,MiniProject4.map -mmcu=atmega32 -o "MiniProject4.elf"  ./Project4.o ./Ultrasonic.o ./gpio.o ./icu.o ./lcd.o   
+Finished building target: MiniProject4.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S MiniProject4.elf  >"MiniProject4.lss"
+Finished building: MiniProject4.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex MiniProject4.elf  "MiniProject4.hex"
+Finished building: MiniProject4.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MiniProject4.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10120 bytes (30.9% Full)
+(.text + .data + .bootloader)
+
+Data:        287 bytes (14.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:31:20 **** Incremental Build of configuration Debug for project MiniProject4 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MiniProject4.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10120 bytes (30.9% Full)
+(.text + .data + .bootloader)
+
+Data:        287 bytes (14.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:31:59 **** Incremental Build of configuration Debug for project MiniProject4 ****
+make all 
+Building file: ../Project4.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"Project4.d" -MT"Project4.o" -c -o "Project4.o" "../Project4.c"
+In file included from ../Ultrasonic.h:11,
+                 from ../Project4.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../Project4.c
+ 
+Building file: ../Ultrasonic.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"Ultrasonic.d" -MT"Ultrasonic.o" -c -o "Ultrasonic.o" "../Ultrasonic.c"
+In file included from ../Ultrasonic.h:11,
+                 from ../Ultrasonic.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../Ultrasonic.c
+ 
+Building target: MiniProject4.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,MiniProject4.map -mmcu=atmega32 -o "MiniProject4.elf"  ./Project4.o ./Ultrasonic.o ./gpio.o ./icu.o ./lcd.o   
+Finished building target: MiniProject4.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S MiniProject4.elf  >"MiniProject4.lss"
+Finished building: MiniProject4.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex MiniProject4.elf  "MiniProject4.hex"
+Finished building: MiniProject4.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MiniProject4.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10136 bytes (30.9% Full)
+(.text + .data + .bootloader)
+
+Data:        287 bytes (14.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:32:01 **** Incremental Build of configuration Debug for project MiniProject4 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MiniProject4.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10136 bytes (30.9% Full)
+(.text + .data + .bootloader)
+
+Data:        287 bytes (14.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:34:27 **** Incremental Build of configuration Debug for project MiniProject4 ****
+make all 
+Building file: ../Project4.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"Project4.d" -MT"Project4.o" -c -o "Project4.o" "../Project4.c"
+In file included from ../Ultrasonic.h:11,
+                 from ../Project4.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../Project4.c
+ 
+Building file: ../Ultrasonic.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"Ultrasonic.d" -MT"Ultrasonic.o" -c -o "Ultrasonic.o" "../Ultrasonic.c"
+In file included from ../Ultrasonic.h:11,
+                 from ../Ultrasonic.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../Ultrasonic.c
+ 
+Building target: MiniProject4.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,MiniProject4.map -mmcu=atmega32 -o "MiniProject4.elf"  ./Project4.o ./Ultrasonic.o ./gpio.o ./icu.o ./lcd.o   
+Finished building target: MiniProject4.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S MiniProject4.elf  >"MiniProject4.lss"
+Finished building: MiniProject4.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex MiniProject4.elf  "MiniProject4.hex"
+Finished building: MiniProject4.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MiniProject4.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10128 bytes (30.9% Full)
+(.text + .data + .bootloader)
+
+Data:        287 bytes (14.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:34:29 **** Incremental Build of configuration Debug for project MiniProject4 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MiniProject4.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10128 bytes (30.9% Full)
+(.text + .data + .bootloader)
+
+Data:        287 bytes (14.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+01:08:01 **** Incremental Build of configuration Debug for project MiniProject4 ****
+make all 
+Building file: ../Project4.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"Project4.d" -MT"Project4.o" -c -o "Project4.o" "../Project4.c"
+In file included from ../Ultrasonic.h:11,
+                 from ../Project4.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Project4.c:15: warning: return type of 'main' is not 'int'
+Finished building: ../Project4.c
+ 
+Building file: ../Ultrasonic.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"Ultrasonic.d" -MT"Ultrasonic.o" -c -o "Ultrasonic.o" "../Ultrasonic.c"
+In file included from ../Ultrasonic.h:11,
+                 from ../Ultrasonic.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../Ultrasonic.c
+ 
+Building target: MiniProject4.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,MiniProject4.map -mmcu=atmega32 -o "MiniProject4.elf"  ./Project4.o ./Ultrasonic.o ./gpio.o ./icu.o ./lcd.o   
+Finished building target: MiniProject4.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S MiniProject4.elf  >"MiniProject4.lss"
+Finished building: MiniProject4.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex MiniProject4.elf  "MiniProject4.hex"
+Finished building: MiniProject4.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MiniProject4.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10128 bytes (30.9% Full)
+(.text + .data + .bootloader)
+
+Data:        287 bytes (14.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+01:09:03 **** Incremental Build of configuration Debug for project MiniProject4 ****
+make all 
+Building file: ../Ultrasonic.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"Ultrasonic.d" -MT"Ultrasonic.o" -c -o "Ultrasonic.o" "../Ultrasonic.c"
+In file included from ../Ultrasonic.h:11,
+                 from ../Ultrasonic.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../Ultrasonic.c
+ 
+Building target: MiniProject4.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,MiniProject4.map -mmcu=atmega32 -o "MiniProject4.elf"  ./Project4.o ./Ultrasonic.o ./gpio.o ./icu.o ./lcd.o   
+Finished building target: MiniProject4.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S MiniProject4.elf  >"MiniProject4.lss"
+Finished building: MiniProject4.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex MiniProject4.elf  "MiniProject4.hex"
+Finished building: MiniProject4.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MiniProject4.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10148 bytes (31.0% Full)
+(.text + .data + .bootloader)
+
+Data:        287 bytes (14.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+01:22:48 **** Incremental Build of configuration Debug for project MiniProject4 ****
+make all 
+Building file: ../Project4.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"Project4.d" -MT"Project4.o" -c -o "Project4.o" "../Project4.c"
+In file included from ../Ultrasonic.h:11,
+                 from ../Project4.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Project4.c:15: warning: return type of 'main' is not 'int'
+Finished building: ../Project4.c
+ 
+Building target: MiniProject4.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,MiniProject4.map -mmcu=atmega32 -o "MiniProject4.elf"  ./Project4.o ./Ultrasonic.o ./gpio.o ./icu.o ./lcd.o   
+Finished building target: MiniProject4.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S MiniProject4.elf  >"MiniProject4.lss"
+Finished building: MiniProject4.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex MiniProject4.elf  "MiniProject4.hex"
+Finished building: MiniProject4.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MiniProject4.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10176 bytes (31.1% Full)
+(.text + .data + .bootloader)
+
+Data:        291 bytes (14.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+01:23:06 **** Incremental Build of configuration Debug for project MiniProject4 ****
+make all 
+Building file: ../Project4.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"Project4.d" -MT"Project4.o" -c -o "Project4.o" "../Project4.c"
+In file included from ../Ultrasonic.h:11,
+                 from ../Project4.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Project4.c:15: warning: return type of 'main' is not 'int'
+Finished building: ../Project4.c
+ 
+Building target: MiniProject4.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,MiniProject4.map -mmcu=atmega32 -o "MiniProject4.elf"  ./Project4.o ./Ultrasonic.o ./gpio.o ./icu.o ./lcd.o   
+Finished building target: MiniProject4.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S MiniProject4.elf  >"MiniProject4.lss"
+Finished building: MiniProject4.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex MiniProject4.elf  "MiniProject4.hex"
+Finished building: MiniProject4.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MiniProject4.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10176 bytes (31.1% Full)
+(.text + .data + .bootloader)
+
+Data:        291 bytes (14.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+01:23:35 **** Incremental Build of configuration Debug for project MiniProject4 ****
+make all 
+Building file: ../Ultrasonic.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"Ultrasonic.d" -MT"Ultrasonic.o" -c -o "Ultrasonic.o" "../Ultrasonic.c"
+In file included from ../Ultrasonic.h:11,
+                 from ../Ultrasonic.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../Ultrasonic.c
+ 
+Building target: MiniProject4.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,MiniProject4.map -mmcu=atmega32 -o "MiniProject4.elf"  ./Project4.o ./Ultrasonic.o ./gpio.o ./icu.o ./lcd.o   
+Finished building target: MiniProject4.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S MiniProject4.elf  >"MiniProject4.lss"
+Finished building: MiniProject4.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex MiniProject4.elf  "MiniProject4.hex"
+Finished building: MiniProject4.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MiniProject4.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10156 bytes (31.0% Full)
+(.text + .data + .bootloader)
+
+Data:        291 bytes (14.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+01:24:09 **** Incremental Build of configuration Debug for project MiniProject4 ****
+make all 
+Building file: ../Project4.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"Project4.d" -MT"Project4.o" -c -o "Project4.o" "../Project4.c"
+In file included from ../Ultrasonic.h:11,
+                 from ../Project4.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Project4.c:15: warning: return type of 'main' is not 'int'
+Finished building: ../Project4.c
+ 
+Building target: MiniProject4.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,MiniProject4.map -mmcu=atmega32 -o "MiniProject4.elf"  ./Project4.o ./Ultrasonic.o ./gpio.o ./icu.o ./lcd.o   
+Finished building target: MiniProject4.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S MiniProject4.elf  >"MiniProject4.lss"
+Finished building: MiniProject4.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex MiniProject4.elf  "MiniProject4.hex"
+Finished building: MiniProject4.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MiniProject4.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10156 bytes (31.0% Full)
+(.text + .data + .bootloader)
+
+Data:        291 bytes (14.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+01:24:13 **** Incremental Build of configuration Debug for project MiniProject4 ****
+make all 
+Building file: ../Project4.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"Project4.d" -MT"Project4.o" -c -o "Project4.o" "../Project4.c"
+In file included from ../Ultrasonic.h:11,
+                 from ../Project4.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Project4.c:15: warning: return type of 'main' is not 'int'
+Finished building: ../Project4.c
+ 
+Building target: MiniProject4.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,MiniProject4.map -mmcu=atmega32 -o "MiniProject4.elf"  ./Project4.o ./Ultrasonic.o ./gpio.o ./icu.o ./lcd.o   
+Finished building target: MiniProject4.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S MiniProject4.elf  >"MiniProject4.lss"
+Finished building: MiniProject4.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex MiniProject4.elf  "MiniProject4.hex"
+Finished building: MiniProject4.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MiniProject4.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10156 bytes (31.0% Full)
+(.text + .data + .bootloader)
+
+Data:        291 bytes (14.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+01:24:23 **** Incremental Build of configuration Debug for project MiniProject4 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MiniProject4.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10156 bytes (31.0% Full)
+(.text + .data + .bootloader)
+
+Data:        291 bytes (14.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+01:24:36 **** Incremental Build of configuration Debug for project MiniProject4 ****
+make all 
+Building file: ../Project4.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"Project4.d" -MT"Project4.o" -c -o "Project4.o" "../Project4.c"
+In file included from ../Ultrasonic.h:11,
+                 from ../Project4.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Project4.c:15: warning: return type of 'main' is not 'int'
+Finished building: ../Project4.c
+ 
+Building target: MiniProject4.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,MiniProject4.map -mmcu=atmega32 -o "MiniProject4.elf"  ./Project4.o ./Ultrasonic.o ./gpio.o ./icu.o ./lcd.o   
+Finished building target: MiniProject4.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S MiniProject4.elf  >"MiniProject4.lss"
+Finished building: MiniProject4.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex MiniProject4.elf  "MiniProject4.hex"
+Finished building: MiniProject4.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MiniProject4.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10156 bytes (31.0% Full)
+(.text + .data + .bootloader)
+
+Data:        291 bytes (14.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+01:26:41 **** Incremental Build of configuration Debug for project MiniProject4 ****
+make all 
+Building file: ../Project4.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"Project4.d" -MT"Project4.o" -c -o "Project4.o" "../Project4.c"
+In file included from ../Ultrasonic.h:11,
+                 from ../Project4.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Project4.c:15: warning: return type of 'main' is not 'int'
+Finished building: ../Project4.c
+ 
+Building target: MiniProject4.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,MiniProject4.map -mmcu=atmega32 -o "MiniProject4.elf"  ./Project4.o ./Ultrasonic.o ./gpio.o ./icu.o ./lcd.o   
+Finished building target: MiniProject4.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S MiniProject4.elf  >"MiniProject4.lss"
+Finished building: MiniProject4.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex MiniProject4.elf  "MiniProject4.hex"
+Finished building: MiniProject4.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MiniProject4.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10384 bytes (31.7% Full)
+(.text + .data + .bootloader)
+
+Data:        291 bytes (14.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+01:26:43 **** Incremental Build of configuration Debug for project MiniProject4 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MiniProject4.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10384 bytes (31.7% Full)
+(.text + .data + .bootloader)
+
+Data:        291 bytes (14.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+01:28:04 **** Incremental Build of configuration Debug for project MiniProject4 ****
+make all 
+Building file: ../Project4.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"Project4.d" -MT"Project4.o" -c -o "Project4.o" "../Project4.c"
+In file included from ../Ultrasonic.h:11,
+                 from ../Project4.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Project4.c:15: warning: return type of 'main' is not 'int'
+Finished building: ../Project4.c
+ 
+Building file: ../Ultrasonic.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"Ultrasonic.d" -MT"Ultrasonic.o" -c -o "Ultrasonic.o" "../Ultrasonic.c"
+In file included from ../Ultrasonic.h:11,
+                 from ../Ultrasonic.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../Ultrasonic.c
+ 
+Building file: ../gpio.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"gpio.d" -MT"gpio.o" -c -o "gpio.o" "../gpio.c"
+Finished building: ../gpio.c
+ 
+Building file: ../icu.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"icu.d" -MT"icu.o" -c -o "icu.o" "../icu.c"
+../icu.c: In function 'ICU_setCallBack':
+../icu.c:73: warning: function return types not compatible due to 'volatile'
+Finished building: ../icu.c
+ 
+Building file: ../lcd.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"lcd.d" -MT"lcd.o" -c -o "lcd.o" "../lcd.c"
+In file included from ../lcd.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../lcd.c
+ 
+Building target: MiniProject4.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,MiniProject4.map -mmcu=atmega32 -o "MiniProject4.elf"  ./Project4.o ./Ultrasonic.o ./gpio.o ./icu.o ./lcd.o   
+Finished building target: MiniProject4.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S MiniProject4.elf  >"MiniProject4.lss"
+Finished building: MiniProject4.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex MiniProject4.elf  "MiniProject4.hex"
+Finished building: MiniProject4.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MiniProject4.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10384 bytes (31.7% Full)
+(.text + .data + .bootloader)
+
+Data:        291 bytes (14.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+01:28:08 **** Incremental Build of configuration Debug for project MiniProject4 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MiniProject4.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10384 bytes (31.7% Full)
+(.text + .data + .bootloader)
+
+Data:        291 bytes (14.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+01:34:30 **** Incremental Build of configuration Debug for project MiniProject4 ****
+make all 
+Building file: ../Project4.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"Project4.d" -MT"Project4.o" -c -o "Project4.o" "../Project4.c"
+In file included from ../Ultrasonic.h:11,
+                 from ../Project4.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Project4.c:15: warning: return type of 'main' is not 'int'
+Finished building: ../Project4.c
+ 
+Building target: MiniProject4.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,MiniProject4.map -mmcu=atmega32 -o "MiniProject4.elf"  ./Project4.o ./Ultrasonic.o ./gpio.o ./icu.o ./lcd.o   
+Finished building target: MiniProject4.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S MiniProject4.elf  >"MiniProject4.lss"
+Finished building: MiniProject4.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex MiniProject4.elf  "MiniProject4.hex"
+Finished building: MiniProject4.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MiniProject4.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10384 bytes (31.7% Full)
+(.text + .data + .bootloader)
+
+Data:        291 bytes (14.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+01:34:33 **** Incremental Build of configuration Debug for project MiniProject4 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MiniProject4.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10384 bytes (31.7% Full)
+(.text + .data + .bootloader)
+
+Data:        291 bytes (14.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+01:36:24 **** Incremental Build of configuration Debug for project MiniProject4 ****
+make all 
+Building file: ../Ultrasonic.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"Ultrasonic.d" -MT"Ultrasonic.o" -c -o "Ultrasonic.o" "../Ultrasonic.c"
+In file included from ../Ultrasonic.h:11,
+                 from ../Ultrasonic.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../Ultrasonic.c
+ 
+Building target: MiniProject4.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,MiniProject4.map -mmcu=atmega32 -o "MiniProject4.elf"  ./Project4.o ./Ultrasonic.o ./gpio.o ./icu.o ./lcd.o   
+Finished building target: MiniProject4.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S MiniProject4.elf  >"MiniProject4.lss"
+Finished building: MiniProject4.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex MiniProject4.elf  "MiniProject4.hex"
+Finished building: MiniProject4.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MiniProject4.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10384 bytes (31.7% Full)
+(.text + .data + .bootloader)
+
+Data:        291 bytes (14.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+01:36:56 **** Incremental Build of configuration Debug for project MiniProject4 ****
+make all 
+Building file: ../Ultrasonic.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"Ultrasonic.d" -MT"Ultrasonic.o" -c -o "Ultrasonic.o" "../Ultrasonic.c"
+In file included from ../Ultrasonic.h:11,
+                 from ../Ultrasonic.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../Ultrasonic.c
+ 
+Building target: MiniProject4.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,MiniProject4.map -mmcu=atmega32 -o "MiniProject4.elf"  ./Project4.o ./Ultrasonic.o ./gpio.o ./icu.o ./lcd.o   
+Finished building target: MiniProject4.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S MiniProject4.elf  >"MiniProject4.lss"
+Finished building: MiniProject4.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex MiniProject4.elf  "MiniProject4.hex"
+Finished building: MiniProject4.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MiniProject4.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10404 bytes (31.8% Full)
+(.text + .data + .bootloader)
+
+Data:        291 bytes (14.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+01:37:03 **** Incremental Build of configuration Debug for project MiniProject4 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MiniProject4.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10404 bytes (31.8% Full)
+(.text + .data + .bootloader)
+
+Data:        291 bytes (14.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+01:37:42 **** Incremental Build of configuration Debug for project MiniProject4 ****
+make all 
+Building file: ../Project4.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"Project4.d" -MT"Project4.o" -c -o "Project4.o" "../Project4.c"
+In file included from ../Ultrasonic.h:11,
+                 from ../Project4.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Project4.c:15: warning: return type of 'main' is not 'int'
+Finished building: ../Project4.c
+ 
+Building target: MiniProject4.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,MiniProject4.map -mmcu=atmega32 -o "MiniProject4.elf"  ./Project4.o ./Ultrasonic.o ./gpio.o ./icu.o ./lcd.o   
+Finished building target: MiniProject4.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S MiniProject4.elf  >"MiniProject4.lss"
+Finished building: MiniProject4.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex MiniProject4.elf  "MiniProject4.hex"
+Finished building: MiniProject4.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MiniProject4.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10404 bytes (31.8% Full)
+(.text + .data + .bootloader)
+
+Data:        291 bytes (14.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+01:38:25 **** Incremental Build of configuration Debug for project MiniProject4 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MiniProject4.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10404 bytes (31.8% Full)
+(.text + .data + .bootloader)
+
+Data:        291 bytes (14.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+01:38:29 **** Incremental Build of configuration Debug for project MiniProject4 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MiniProject4.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10404 bytes (31.8% Full)
+(.text + .data + .bootloader)
+
+Data:        291 bytes (14.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+01:49:44 **** Incremental Build of configuration Debug for project MiniProject4 ****
+make all 
+Building file: ../Ultrasonic.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"Ultrasonic.d" -MT"Ultrasonic.o" -c -o "Ultrasonic.o" "../Ultrasonic.c"
+In file included from ../Ultrasonic.h:11,
+                 from ../Ultrasonic.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../Ultrasonic.c
+ 
+Building target: MiniProject4.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,MiniProject4.map -mmcu=atmega32 -o "MiniProject4.elf"  ./Project4.o ./Ultrasonic.o ./gpio.o ./icu.o ./lcd.o   
+Finished building target: MiniProject4.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S MiniProject4.elf  >"MiniProject4.lss"
+Finished building: MiniProject4.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex MiniProject4.elf  "MiniProject4.hex"
+Finished building: MiniProject4.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MiniProject4.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9650 bytes (29.4% Full)
+(.text + .data + .bootloader)
+
+Data:         35 bytes (1.7% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+01:49:47 **** Incremental Build of configuration Debug for project MiniProject4 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MiniProject4.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9650 bytes (29.4% Full)
+(.text + .data + .bootloader)
+
+Data:         35 bytes (1.7% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+01:50:43 **** Incremental Build of configuration Debug for project MiniProject4 ****
+make all 
+Building file: ../Ultrasonic.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"Ultrasonic.d" -MT"Ultrasonic.o" -c -o "Ultrasonic.o" "../Ultrasonic.c"
+In file included from ../Ultrasonic.h:11,
+                 from ../Ultrasonic.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../Ultrasonic.c
+ 
+Building target: MiniProject4.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,MiniProject4.map -mmcu=atmega32 -o "MiniProject4.elf"  ./Project4.o ./Ultrasonic.o ./gpio.o ./icu.o ./lcd.o   
+Finished building target: MiniProject4.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S MiniProject4.elf  >"MiniProject4.lss"
+Finished building: MiniProject4.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex MiniProject4.elf  "MiniProject4.hex"
+Finished building: MiniProject4.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MiniProject4.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10446 bytes (31.9% Full)
+(.text + .data + .bootloader)
+
+Data:        291 bytes (14.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+01:51:25 **** Incremental Build of configuration Debug for project MiniProject4 ****
+make all 
+Building file: ../Ultrasonic.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"Ultrasonic.d" -MT"Ultrasonic.o" -c -o "Ultrasonic.o" "../Ultrasonic.c"
+In file included from ../Ultrasonic.h:11,
+                 from ../Ultrasonic.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../Ultrasonic.c
+ 
+Building target: MiniProject4.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,MiniProject4.map -mmcu=atmega32 -o "MiniProject4.elf"  ./Project4.o ./Ultrasonic.o ./gpio.o ./icu.o ./lcd.o   
+Finished building target: MiniProject4.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S MiniProject4.elf  >"MiniProject4.lss"
+Finished building: MiniProject4.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex MiniProject4.elf  "MiniProject4.hex"
+Finished building: MiniProject4.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MiniProject4.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10426 bytes (31.8% Full)
+(.text + .data + .bootloader)
+
+Data:        291 bytes (14.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+01:51:27 **** Incremental Build of configuration Debug for project MiniProject4 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MiniProject4.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10426 bytes (31.8% Full)
+(.text + .data + .bootloader)
+
+Data:        291 bytes (14.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+01:52:34 **** Incremental Build of configuration Debug for project MiniProject4 ****
+make all 
+Building file: ../Ultrasonic.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"Ultrasonic.d" -MT"Ultrasonic.o" -c -o "Ultrasonic.o" "../Ultrasonic.c"
+In file included from ../Ultrasonic.h:11,
+                 from ../Ultrasonic.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Ultrasonic.c: In function 'Ultrasonic_readDistance':
+../Ultrasonic.c:33: error: 'distance_cm' undeclared (first use in this function)
+../Ultrasonic.c:33: error: (Each undeclared identifier is reported only once
+../Ultrasonic.c:33: error: for each function it appears in.)
+../Ultrasonic.c:34: warning: control reaches end of non-void function
+../Ultrasonic.c: In function 'Ultrasonic_edgeProcessing':
+../Ultrasonic.c:39: error: 'count' undeclared (first use in this function)
+../Ultrasonic.c:45: error: 'pulse_width' undeclared (first use in this function)
+../Ultrasonic.c:47: error: 'distance_cm' undeclared (first use in this function)
+make: *** [Ultrasonic.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+01:52:37 **** Incremental Build of configuration Debug for project MiniProject4 ****
+make all 
+Building file: ../Project4.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"Project4.d" -MT"Project4.o" -c -o "Project4.o" "../Project4.c"
+In file included from ../Ultrasonic.h:11,
+                 from ../Project4.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Project4.c:15: warning: return type of 'main' is not 'int'
+Finished building: ../Project4.c
+ 
+Building file: ../Ultrasonic.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"Ultrasonic.d" -MT"Ultrasonic.o" -c -o "Ultrasonic.o" "../Ultrasonic.c"
+In file included from ../Ultrasonic.h:11,
+                 from ../Ultrasonic.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../Ultrasonic.c
+ 
+Building target: MiniProject4.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,MiniProject4.map -mmcu=atmega32 -o "MiniProject4.elf"  ./Project4.o ./Ultrasonic.o ./gpio.o ./icu.o ./lcd.o   
+Finished building target: MiniProject4.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S MiniProject4.elf  >"MiniProject4.lss"
+Finished building: MiniProject4.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex MiniProject4.elf  "MiniProject4.hex"
+Finished building: MiniProject4.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MiniProject4.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10426 bytes (31.8% Full)
+(.text + .data + .bootloader)
+
+Data:        296 bytes (14.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+01:52:39 **** Incremental Build of configuration Debug for project MiniProject4 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MiniProject4.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10426 bytes (31.8% Full)
+(.text + .data + .bootloader)
+
+Data:        296 bytes (14.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+01:52:53 **** Incremental Build of configuration Debug for project MiniProject4 ****
+make all 
+Building file: ../Project4.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"Project4.d" -MT"Project4.o" -c -o "Project4.o" "../Project4.c"
+In file included from ../Ultrasonic.h:11,
+                 from ../Project4.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Project4.c:15: warning: return type of 'main' is not 'int'
+Finished building: ../Project4.c
+ 
+Building target: MiniProject4.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,MiniProject4.map -mmcu=atmega32 -o "MiniProject4.elf"  ./Project4.o ./Ultrasonic.o ./gpio.o ./icu.o ./lcd.o   
+Finished building target: MiniProject4.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S MiniProject4.elf  >"MiniProject4.lss"
+Finished building: MiniProject4.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex MiniProject4.elf  "MiniProject4.hex"
+Finished building: MiniProject4.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MiniProject4.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10426 bytes (31.8% Full)
+(.text + .data + .bootloader)
+
+Data:        296 bytes (14.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+01:54:44 **** Incremental Build of configuration Debug for project MiniProject4 ****
+make all 
+Building file: ../Project4.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"Project4.d" -MT"Project4.o" -c -o "Project4.o" "../Project4.c"
+In file included from ../Ultrasonic.h:11,
+                 from ../Project4.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Project4.c:15: warning: return type of 'main' is not 'int'
+Finished building: ../Project4.c
+ 
+Building target: MiniProject4.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,MiniProject4.map -mmcu=atmega32 -o "MiniProject4.elf"  ./Project4.o ./Ultrasonic.o ./gpio.o ./icu.o ./lcd.o   
+Finished building target: MiniProject4.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S MiniProject4.elf  >"MiniProject4.lss"
+Finished building: MiniProject4.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex MiniProject4.elf  "MiniProject4.hex"
+Finished building: MiniProject4.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MiniProject4.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10428 bytes (31.8% Full)
+(.text + .data + .bootloader)
+
+Data:        298 bytes (14.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+01:55:30 **** Incremental Build of configuration Debug for project MiniProject4 ****
+make all 
+Building file: ../Project4.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"Project4.d" -MT"Project4.o" -c -o "Project4.o" "../Project4.c"
+In file included from ../Ultrasonic.h:11,
+                 from ../Project4.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Project4.c:15: warning: return type of 'main' is not 'int'
+Finished building: ../Project4.c
+ 
+Building target: MiniProject4.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,MiniProject4.map -mmcu=atmega32 -o "MiniProject4.elf"  ./Project4.o ./Ultrasonic.o ./gpio.o ./icu.o ./lcd.o   
+Finished building target: MiniProject4.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S MiniProject4.elf  >"MiniProject4.lss"
+Finished building: MiniProject4.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex MiniProject4.elf  "MiniProject4.hex"
+Finished building: MiniProject4.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MiniProject4.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10428 bytes (31.8% Full)
+(.text + .data + .bootloader)
+
+Data:        298 bytes (14.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+01:56:28 **** Incremental Build of configuration Debug for project MiniProject4 ****
+make all 
+Building file: ../Project4.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"Project4.d" -MT"Project4.o" -c -o "Project4.o" "../Project4.c"
+In file included from ../Ultrasonic.h:11,
+                 from ../Project4.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Project4.c:15: warning: return type of 'main' is not 'int'
+Finished building: ../Project4.c
+ 
+Building target: MiniProject4.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,MiniProject4.map -mmcu=atmega32 -o "MiniProject4.elf"  ./Project4.o ./Ultrasonic.o ./gpio.o ./icu.o ./lcd.o   
+Finished building target: MiniProject4.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S MiniProject4.elf  >"MiniProject4.lss"
+Finished building: MiniProject4.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex MiniProject4.elf  "MiniProject4.hex"
+Finished building: MiniProject4.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MiniProject4.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10428 bytes (31.8% Full)
+(.text + .data + .bootloader)
+
+Data:        298 bytes (14.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+02:00:46 **** Incremental Build of configuration Debug for project MiniProject4 ****
+make all 
+Building file: ../Ultrasonic.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"Ultrasonic.d" -MT"Ultrasonic.o" -c -o "Ultrasonic.o" "../Ultrasonic.c"
+In file included from ../Ultrasonic.h:11,
+                 from ../Ultrasonic.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../Ultrasonic.c
+ 
+Building target: MiniProject4.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,MiniProject4.map -mmcu=atmega32 -o "MiniProject4.elf"  ./Project4.o ./Ultrasonic.o ./gpio.o ./icu.o ./lcd.o   
+Finished building target: MiniProject4.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S MiniProject4.elf  >"MiniProject4.lss"
+Finished building: MiniProject4.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex MiniProject4.elf  "MiniProject4.hex"
+Finished building: MiniProject4.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MiniProject4.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10406 bytes (31.8% Full)
+(.text + .data + .bootloader)
+
+Data:        298 bytes (14.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+02:01:01 **** Incremental Build of configuration Debug for project MiniProject4 ****
+make all 
+Building file: ../Ultrasonic.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"Ultrasonic.d" -MT"Ultrasonic.o" -c -o "Ultrasonic.o" "../Ultrasonic.c"
+In file included from ../Ultrasonic.h:11,
+                 from ../Ultrasonic.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../Ultrasonic.c
+ 
+Building target: MiniProject4.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,MiniProject4.map -mmcu=atmega32 -o "MiniProject4.elf"  ./Project4.o ./Ultrasonic.o ./gpio.o ./icu.o ./lcd.o   
+Finished building target: MiniProject4.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S MiniProject4.elf  >"MiniProject4.lss"
+Finished building: MiniProject4.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex MiniProject4.elf  "MiniProject4.hex"
+Finished building: MiniProject4.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MiniProject4.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10406 bytes (31.8% Full)
+(.text + .data + .bootloader)
+
+Data:        298 bytes (14.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+02:01:37 **** Incremental Build of configuration Debug for project MiniProject4 ****
+make all 
+Building file: ../Ultrasonic.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"Ultrasonic.d" -MT"Ultrasonic.o" -c -o "Ultrasonic.o" "../Ultrasonic.c"
+In file included from ../Ultrasonic.h:11,
+                 from ../Ultrasonic.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../Ultrasonic.c
+ 
+Building target: MiniProject4.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,MiniProject4.map -mmcu=atmega32 -o "MiniProject4.elf"  ./Project4.o ./Ultrasonic.o ./gpio.o ./icu.o ./lcd.o   
+Finished building target: MiniProject4.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S MiniProject4.elf  >"MiniProject4.lss"
+Finished building: MiniProject4.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex MiniProject4.elf  "MiniProject4.hex"
+Finished building: MiniProject4.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MiniProject4.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10406 bytes (31.8% Full)
+(.text + .data + .bootloader)
+
+Data:        298 bytes (14.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+02:01:58 **** Incremental Build of configuration Debug for project MiniProject4 ****
+make all 
+Building file: ../Ultrasonic.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"Ultrasonic.d" -MT"Ultrasonic.o" -c -o "Ultrasonic.o" "../Ultrasonic.c"
+In file included from ../Ultrasonic.h:11,
+                 from ../Ultrasonic.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../Ultrasonic.c
+ 
+Building target: MiniProject4.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,MiniProject4.map -mmcu=atmega32 -o "MiniProject4.elf"  ./Project4.o ./Ultrasonic.o ./gpio.o ./icu.o ./lcd.o   
+Finished building target: MiniProject4.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S MiniProject4.elf  >"MiniProject4.lss"
+Finished building: MiniProject4.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex MiniProject4.elf  "MiniProject4.hex"
+Finished building: MiniProject4.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MiniProject4.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9694 bytes (29.6% Full)
+(.text + .data + .bootloader)
+
+Data:         42 bytes (2.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+02:02:16 **** Incremental Build of configuration Debug for project MiniProject4 ****
+make all 
+Building file: ../Ultrasonic.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"Ultrasonic.d" -MT"Ultrasonic.o" -c -o "Ultrasonic.o" "../Ultrasonic.c"
+In file included from ../Ultrasonic.h:11,
+                 from ../Ultrasonic.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Ultrasonic.c: In function 'Ultrasonic_edgeProcessing':
+../Ultrasonic.c:47: error: expected expression before ')' token
+make: *** [Ultrasonic.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+02:02:18 **** Incremental Build of configuration Debug for project MiniProject4 ****
+make all 
+Building file: ../Ultrasonic.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"Ultrasonic.d" -MT"Ultrasonic.o" -c -o "Ultrasonic.o" "../Ultrasonic.c"
+In file included from ../Ultrasonic.h:11,
+                 from ../Ultrasonic.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Ultrasonic.c: In function 'Ultrasonic_edgeProcessing':
+../Ultrasonic.c:47: error: expected expression before ')' token
+make: *** [Ultrasonic.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+02:02:20 **** Incremental Build of configuration Debug for project MiniProject4 ****
+make all 
+Building file: ../Ultrasonic.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"Ultrasonic.d" -MT"Ultrasonic.o" -c -o "Ultrasonic.o" "../Ultrasonic.c"
+In file included from ../Ultrasonic.h:11,
+                 from ../Ultrasonic.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Ultrasonic.c: In function 'Ultrasonic_edgeProcessing':
+../Ultrasonic.c:47: error: expected expression before ')' token
+make: *** [Ultrasonic.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+02:02:22 **** Incremental Build of configuration Debug for project MiniProject4 ****
+make all 
+Building file: ../Ultrasonic.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"Ultrasonic.d" -MT"Ultrasonic.o" -c -o "Ultrasonic.o" "../Ultrasonic.c"
+In file included from ../Ultrasonic.h:11,
+                 from ../Ultrasonic.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Ultrasonic.c: In function 'Ultrasonic_edgeProcessing':
+../Ultrasonic.c:47: error: expected expression before ')' token
+make: *** [Ultrasonic.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+02:02:35 **** Incremental Build of configuration Debug for project MiniProject4 ****
+make all 
+Building file: ../Ultrasonic.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"Ultrasonic.d" -MT"Ultrasonic.o" -c -o "Ultrasonic.o" "../Ultrasonic.c"
+In file included from ../Ultrasonic.h:11,
+                 from ../Ultrasonic.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../Ultrasonic.c
+ 
+Building target: MiniProject4.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,MiniProject4.map -mmcu=atmega32 -o "MiniProject4.elf"  ./Project4.o ./Ultrasonic.o ./gpio.o ./icu.o ./lcd.o   
+Finished building target: MiniProject4.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S MiniProject4.elf  >"MiniProject4.lss"
+Finished building: MiniProject4.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex MiniProject4.elf  "MiniProject4.hex"
+Finished building: MiniProject4.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MiniProject4.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10386 bytes (31.7% Full)
+(.text + .data + .bootloader)
+
+Data:        298 bytes (14.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+02:02:53 **** Incremental Build of configuration Debug for project MiniProject4 ****
+make all 
+Building file: ../Ultrasonic.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"Ultrasonic.d" -MT"Ultrasonic.o" -c -o "Ultrasonic.o" "../Ultrasonic.c"
+In file included from ../Ultrasonic.h:11,
+                 from ../Ultrasonic.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../Ultrasonic.c
+ 
+Building target: MiniProject4.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,MiniProject4.map -mmcu=atmega32 -o "MiniProject4.elf"  ./Project4.o ./Ultrasonic.o ./gpio.o ./icu.o ./lcd.o   
+Finished building target: MiniProject4.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S MiniProject4.elf  >"MiniProject4.lss"
+Finished building: MiniProject4.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex MiniProject4.elf  "MiniProject4.hex"
+Finished building: MiniProject4.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MiniProject4.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10386 bytes (31.7% Full)
+(.text + .data + .bootloader)
+
+Data:        298 bytes (14.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+02:03:10 **** Incremental Build of configuration Debug for project MiniProject4 ****
+make all 
+Building file: ../Ultrasonic.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"Ultrasonic.d" -MT"Ultrasonic.o" -c -o "Ultrasonic.o" "../Ultrasonic.c"
+In file included from ../Ultrasonic.h:11,
+                 from ../Ultrasonic.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../Ultrasonic.c
+ 
+Building target: MiniProject4.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,MiniProject4.map -mmcu=atmega32 -o "MiniProject4.elf"  ./Project4.o ./Ultrasonic.o ./gpio.o ./icu.o ./lcd.o   
+Finished building target: MiniProject4.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S MiniProject4.elf  >"MiniProject4.lss"
+Finished building: MiniProject4.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex MiniProject4.elf  "MiniProject4.hex"
+Finished building: MiniProject4.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MiniProject4.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10386 bytes (31.7% Full)
+(.text + .data + .bootloader)
+
+Data:        298 bytes (14.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+02:07:40 **** Incremental Build of configuration Debug for project MiniProject4 ****
+make all 
+Building file: ../Ultrasonic.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"Ultrasonic.d" -MT"Ultrasonic.o" -c -o "Ultrasonic.o" "../Ultrasonic.c"
+In file included from ../Ultrasonic.h:11,
+                 from ../Ultrasonic.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../Ultrasonic.c
+ 
+Building target: MiniProject4.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,MiniProject4.map -mmcu=atmega32 -o "MiniProject4.elf"  ./Project4.o ./Ultrasonic.o ./gpio.o ./icu.o ./lcd.o   
+Finished building target: MiniProject4.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S MiniProject4.elf  >"MiniProject4.lss"
+Finished building: MiniProject4.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex MiniProject4.elf  "MiniProject4.hex"
+Finished building: MiniProject4.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MiniProject4.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10386 bytes (31.7% Full)
+(.text + .data + .bootloader)
+
+Data:        298 bytes (14.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+02:07:50 **** Incremental Build of configuration Debug for project MiniProject4 ****
+make all 
+Building file: ../Project4.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"Project4.d" -MT"Project4.o" -c -o "Project4.o" "../Project4.c"
+In file included from ../Ultrasonic.h:11,
+                 from ../Project4.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Project4.c:15: warning: return type of 'main' is not 'int'
+Finished building: ../Project4.c
+ 
+Building target: MiniProject4.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,MiniProject4.map -mmcu=atmega32 -o "MiniProject4.elf"  ./Project4.o ./Ultrasonic.o ./gpio.o ./icu.o ./lcd.o   
+Finished building target: MiniProject4.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S MiniProject4.elf  >"MiniProject4.lss"
+Finished building: MiniProject4.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex MiniProject4.elf  "MiniProject4.hex"
+Finished building: MiniProject4.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MiniProject4.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10386 bytes (31.7% Full)
+(.text + .data + .bootloader)
+
+Data:        298 bytes (14.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+02:08:02 **** Incremental Build of configuration Debug for project MiniProject4 ****
+make all 
+Building file: ../Project4.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"Project4.d" -MT"Project4.o" -c -o "Project4.o" "../Project4.c"
+In file included from ../Ultrasonic.h:11,
+                 from ../Project4.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Project4.c:15: warning: return type of 'main' is not 'int'
+Finished building: ../Project4.c
+ 
+Building target: MiniProject4.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,MiniProject4.map -mmcu=atmega32 -o "MiniProject4.elf"  ./Project4.o ./Ultrasonic.o ./gpio.o ./icu.o ./lcd.o   
+Finished building target: MiniProject4.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S MiniProject4.elf  >"MiniProject4.lss"
+Finished building: MiniProject4.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex MiniProject4.elf  "MiniProject4.hex"
+Finished building: MiniProject4.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MiniProject4.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10386 bytes (31.7% Full)
+(.text + .data + .bootloader)
+
+Data:        298 bytes (14.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+02:08:41 **** Incremental Build of configuration Debug for project MiniProject4 ****
+make all 
+Building file: ../Project4.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"Project4.d" -MT"Project4.o" -c -o "Project4.o" "../Project4.c"
+In file included from ../Ultrasonic.h:11,
+                 from ../Project4.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Project4.c:15: warning: return type of 'main' is not 'int'
+Finished building: ../Project4.c
+ 
+Building target: MiniProject4.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,MiniProject4.map -mmcu=atmega32 -o "MiniProject4.elf"  ./Project4.o ./Ultrasonic.o ./gpio.o ./icu.o ./lcd.o   
+Finished building target: MiniProject4.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S MiniProject4.elf  >"MiniProject4.lss"
+Finished building: MiniProject4.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex MiniProject4.elf  "MiniProject4.hex"
+Finished building: MiniProject4.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MiniProject4.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10386 bytes (31.7% Full)
+(.text + .data + .bootloader)
+
+Data:        298 bytes (14.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+02:08:47 **** Incremental Build of configuration Debug for project MiniProject4 ****
+make all 
+Building file: ../Project4.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"Project4.d" -MT"Project4.o" -c -o "Project4.o" "../Project4.c"
+In file included from ../Ultrasonic.h:11,
+                 from ../Project4.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Project4.c:15: warning: return type of 'main' is not 'int'
+Finished building: ../Project4.c
+ 
+Building target: MiniProject4.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,MiniProject4.map -mmcu=atmega32 -o "MiniProject4.elf"  ./Project4.o ./Ultrasonic.o ./gpio.o ./icu.o ./lcd.o   
+Finished building target: MiniProject4.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S MiniProject4.elf  >"MiniProject4.lss"
+Finished building: MiniProject4.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex MiniProject4.elf  "MiniProject4.hex"
+Finished building: MiniProject4.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MiniProject4.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10158 bytes (31.0% Full)
+(.text + .data + .bootloader)
+
+Data:        298 bytes (14.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+02:09:11 **** Incremental Build of configuration Debug for project MiniProject4 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MiniProject4.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10158 bytes (31.0% Full)
+(.text + .data + .bootloader)
+
+Data:        298 bytes (14.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+02:09:46 **** Incremental Build of configuration Debug for project MiniProject4 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MiniProject4.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10158 bytes (31.0% Full)
+(.text + .data + .bootloader)
+
+Data:        298 bytes (14.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+02:09:54 **** Incremental Build of configuration Debug for project MiniProject4 ****
+make all 
+Building file: ../Project4.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"Project4.d" -MT"Project4.o" -c -o "Project4.o" "../Project4.c"
+In file included from ../Ultrasonic.h:11,
+                 from ../Project4.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Project4.c:15: warning: return type of 'main' is not 'int'
+Finished building: ../Project4.c
+ 
+Building target: MiniProject4.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,MiniProject4.map -mmcu=atmega32 -o "MiniProject4.elf"  ./Project4.o ./Ultrasonic.o ./gpio.o ./icu.o ./lcd.o   
+Finished building target: MiniProject4.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S MiniProject4.elf  >"MiniProject4.lss"
+Finished building: MiniProject4.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex MiniProject4.elf  "MiniProject4.hex"
+Finished building: MiniProject4.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MiniProject4.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10386 bytes (31.7% Full)
+(.text + .data + .bootloader)
+
+Data:        298 bytes (14.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+02:10:14 **** Incremental Build of configuration Debug for project MiniProject4 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MiniProject4.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10386 bytes (31.7% Full)
+(.text + .data + .bootloader)
+
+Data:        298 bytes (14.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:46:35 **** Clean-only build of configuration Debug for project MiniProject4 ****
+make clean 
+rm -rf  MiniProject4.hex  ./Project4.o ./Ultrasonic.o ./gpio.o ./icu.o ./lcd.o  sizedummy  MiniProject4.lss  ./Project4.d ./Ultrasonic.d ./gpio.d ./icu.d ./lcd.d  MiniProject4.elf
+ 
+12:46:36 **** Incremental Build of configuration Debug for project MiniProject4 ****
+make all 
+Building file: ../Project4.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"Project4.d" -MT"Project4.o" -c -o "Project4.o" "../Project4.c"
+In file included from ../Ultrasonic.h:11,
+                 from ../Project4.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Project4.c:15: warning: return type of 'main' is not 'int'
+Finished building: ../Project4.c
+ 
+Building file: ../Ultrasonic.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"Ultrasonic.d" -MT"Ultrasonic.o" -c -o "Ultrasonic.o" "../Ultrasonic.c"
+In file included from ../Ultrasonic.h:11,
+                 from ../Ultrasonic.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../Ultrasonic.c
+ 
+Building file: ../gpio.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"gpio.d" -MT"gpio.o" -c -o "gpio.o" "../gpio.c"
+Finished building: ../gpio.c
+ 
+Building file: ../icu.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"icu.d" -MT"icu.o" -c -o "icu.o" "../icu.c"
+../icu.c: In function 'ICU_setCallBack':
+../icu.c:73: warning: function return types not compatible due to 'volatile'
+Finished building: ../icu.c
+ 
+Building file: ../lcd.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"lcd.d" -MT"lcd.o" -c -o "lcd.o" "../lcd.c"
+In file included from ../lcd.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../lcd.c
+ 
+Building target: MiniProject4.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,MiniProject4.map -mmcu=atmega32 -o "MiniProject4.elf"  ./Project4.o ./Ultrasonic.o ./gpio.o ./icu.o ./lcd.o   
+Finished building target: MiniProject4.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S MiniProject4.elf  >"MiniProject4.lss"
+Finished building: MiniProject4.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex MiniProject4.elf  "MiniProject4.hex"
+Finished building: MiniProject4.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MiniProject4.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10374 bytes (31.7% Full)
+(.text + .data + .bootloader)
+
+Data:        294 bytes (14.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:46:40 **** Incremental Build of configuration Debug for project MiniProject4 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MiniProject4.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10374 bytes (31.7% Full)
+(.text + .data + .bootloader)
+
+Data:        294 bytes (14.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:47:52 **** Incremental Build of configuration Debug for project MiniProject4 ****
+make all 
+Building file: ../Project4.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"Project4.d" -MT"Project4.o" -c -o "Project4.o" "../Project4.c"
+In file included from ../Ultrasonic.h:11,
+                 from ../Project4.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Project4.c:15: warning: return type of 'main' is not 'int'
+Finished building: ../Project4.c
+ 
+Building target: MiniProject4.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,MiniProject4.map -mmcu=atmega32 -o "MiniProject4.elf"  ./Project4.o ./Ultrasonic.o ./gpio.o ./icu.o ./lcd.o   
+Finished building target: MiniProject4.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S MiniProject4.elf  >"MiniProject4.lss"
+Finished building: MiniProject4.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex MiniProject4.elf  "MiniProject4.hex"
+Finished building: MiniProject4.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MiniProject4.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10374 bytes (31.7% Full)
+(.text + .data + .bootloader)
+
+Data:        294 bytes (14.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:48:01 **** Incremental Build of configuration Debug for project MiniProject4 ****
+make all 
+Building file: ../Project4.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"Project4.d" -MT"Project4.o" -c -o "Project4.o" "../Project4.c"
+In file included from ../Ultrasonic.h:11,
+                 from ../Project4.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Project4.c:15: warning: return type of 'main' is not 'int'
+Finished building: ../Project4.c
+ 
+Building target: MiniProject4.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,MiniProject4.map -mmcu=atmega32 -o "MiniProject4.elf"  ./Project4.o ./Ultrasonic.o ./gpio.o ./icu.o ./lcd.o   
+Finished building target: MiniProject4.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S MiniProject4.elf  >"MiniProject4.lss"
+Finished building: MiniProject4.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex MiniProject4.elf  "MiniProject4.hex"
+Finished building: MiniProject4.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MiniProject4.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10386 bytes (31.7% Full)
+(.text + .data + .bootloader)
+
+Data:        298 bytes (14.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:48:04 **** Incremental Build of configuration Debug for project MiniProject4 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MiniProject4.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10386 bytes (31.7% Full)
+(.text + .data + .bootloader)
+
+Data:        298 bytes (14.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:48:36 **** Incremental Build of configuration Debug for project MiniProject4 ****
+make all 
+Building file: ../Project4.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"Project4.d" -MT"Project4.o" -c -o "Project4.o" "../Project4.c"
+In file included from ../Ultrasonic.h:11,
+                 from ../Project4.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Project4.c:15: warning: return type of 'main' is not 'int'
+Finished building: ../Project4.c
+ 
+Building target: MiniProject4.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,MiniProject4.map -mmcu=atmega32 -o "MiniProject4.elf"  ./Project4.o ./Ultrasonic.o ./gpio.o ./icu.o ./lcd.o   
+Finished building target: MiniProject4.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S MiniProject4.elf  >"MiniProject4.lss"
+Finished building: MiniProject4.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex MiniProject4.elf  "MiniProject4.hex"
+Finished building: MiniProject4.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MiniProject4.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10384 bytes (31.7% Full)
+(.text + .data + .bootloader)
+
+Data:        296 bytes (14.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:49:00 **** Incremental Build of configuration Debug for project MiniProject4 ****
+make all 
+Building file: ../Project4.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"Project4.d" -MT"Project4.o" -c -o "Project4.o" "../Project4.c"
+In file included from ../Ultrasonic.h:11,
+                 from ../Project4.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Project4.c:15: warning: return type of 'main' is not 'int'
+Finished building: ../Project4.c
+ 
+Building target: MiniProject4.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,MiniProject4.map -mmcu=atmega32 -o "MiniProject4.elf"  ./Project4.o ./Ultrasonic.o ./gpio.o ./icu.o ./lcd.o   
+Finished building target: MiniProject4.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S MiniProject4.elf  >"MiniProject4.lss"
+Finished building: MiniProject4.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex MiniProject4.elf  "MiniProject4.hex"
+Finished building: MiniProject4.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MiniProject4.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10384 bytes (31.7% Full)
+(.text + .data + .bootloader)
+
+Data:        296 bytes (14.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:52:03 **** Incremental Build of configuration Debug for project MiniProject4 ****
+make all 
+Building file: ../Project4.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"Project4.d" -MT"Project4.o" -c -o "Project4.o" "../Project4.c"
+In file included from ../Ultrasonic.h:11,
+                 from ../Project4.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Project4.c:15: warning: return type of 'main' is not 'int'
+Finished building: ../Project4.c
+ 
+Building target: MiniProject4.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,MiniProject4.map -mmcu=atmega32 -o "MiniProject4.elf"  ./Project4.o ./Ultrasonic.o ./gpio.o ./icu.o ./lcd.o   
+Finished building target: MiniProject4.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S MiniProject4.elf  >"MiniProject4.lss"
+Finished building: MiniProject4.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex MiniProject4.elf  "MiniProject4.hex"
+Finished building: MiniProject4.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MiniProject4.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10156 bytes (31.0% Full)
+(.text + .data + .bootloader)
+
+Data:        296 bytes (14.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:52:06 **** Incremental Build of configuration Debug for project MiniProject4 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MiniProject4.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10156 bytes (31.0% Full)
+(.text + .data + .bootloader)
+
+Data:        296 bytes (14.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:52:28 **** Incremental Build of configuration Debug for project MiniProject4 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MiniProject4.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10156 bytes (31.0% Full)
+(.text + .data + .bootloader)
+
+Data:        296 bytes (14.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:52:31 **** Incremental Build of configuration Debug for project MiniProject4 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MiniProject4.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10156 bytes (31.0% Full)
+(.text + .data + .bootloader)
+
+Data:        296 bytes (14.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:52:37 **** Incremental Build of configuration Debug for project MiniProject4 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MiniProject4.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10156 bytes (31.0% Full)
+(.text + .data + .bootloader)
+
+Data:        296 bytes (14.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:52:45 **** Incremental Build of configuration Debug for project MiniProject4 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MiniProject4.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10156 bytes (31.0% Full)
+(.text + .data + .bootloader)
+
+Data:        296 bytes (14.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:53:04 **** Incremental Build of configuration Debug for project MiniProject4 ****
+make all 
+Building file: ../Ultrasonic.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"Ultrasonic.d" -MT"Ultrasonic.o" -c -o "Ultrasonic.o" "../Ultrasonic.c"
+In file included from ../Ultrasonic.h:11,
+                 from ../Ultrasonic.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../Ultrasonic.c
+ 
+Building target: MiniProject4.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,MiniProject4.map -mmcu=atmega32 -o "MiniProject4.elf"  ./Project4.o ./Ultrasonic.o ./gpio.o ./icu.o ./lcd.o   
+Finished building target: MiniProject4.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S MiniProject4.elf  >"MiniProject4.lss"
+Finished building: MiniProject4.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex MiniProject4.elf  "MiniProject4.hex"
+Finished building: MiniProject4.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MiniProject4.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10156 bytes (31.0% Full)
+(.text + .data + .bootloader)
+
+Data:        296 bytes (14.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:54:54 **** Incremental Build of configuration Debug for project MiniProject4 ****
+make all 
+Building file: ../Project4.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"Project4.d" -MT"Project4.o" -c -o "Project4.o" "../Project4.c"
+In file included from ../Ultrasonic.h:11,
+                 from ../Project4.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Project4.c:15: warning: return type of 'main' is not 'int'
+Finished building: ../Project4.c
+ 
+Building file: ../Ultrasonic.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"Ultrasonic.d" -MT"Ultrasonic.o" -c -o "Ultrasonic.o" "../Ultrasonic.c"
+In file included from ../Ultrasonic.h:11,
+                 from ../Ultrasonic.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../Ultrasonic.c
+ 
+Building target: MiniProject4.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,MiniProject4.map -mmcu=atmega32 -o "MiniProject4.elf"  ./Project4.o ./Ultrasonic.o ./gpio.o ./icu.o ./lcd.o   
+Finished building target: MiniProject4.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S MiniProject4.elf  >"MiniProject4.lss"
+Finished building: MiniProject4.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex MiniProject4.elf  "MiniProject4.hex"
+Finished building: MiniProject4.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MiniProject4.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10156 bytes (31.0% Full)
+(.text + .data + .bootloader)
+
+Data:        296 bytes (14.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:55:14 **** Incremental Build of configuration Debug for project MiniProject4 ****
+make all 
+Building file: ../Project4.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"Project4.d" -MT"Project4.o" -c -o "Project4.o" "../Project4.c"
+In file included from ../Ultrasonic.h:11,
+                 from ../Project4.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Project4.c:15: warning: return type of 'main' is not 'int'
+Finished building: ../Project4.c
+ 
+Building file: ../Ultrasonic.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"Ultrasonic.d" -MT"Ultrasonic.o" -c -o "Ultrasonic.o" "../Ultrasonic.c"
+In file included from ../Ultrasonic.h:11,
+                 from ../Ultrasonic.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../Ultrasonic.c
+ 
+Building target: MiniProject4.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,MiniProject4.map -mmcu=atmega32 -o "MiniProject4.elf"  ./Project4.o ./Ultrasonic.o ./gpio.o ./icu.o ./lcd.o   
+Finished building target: MiniProject4.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S MiniProject4.elf  >"MiniProject4.lss"
+Finished building: MiniProject4.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex MiniProject4.elf  "MiniProject4.hex"
+Finished building: MiniProject4.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MiniProject4.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10156 bytes (31.0% Full)
+(.text + .data + .bootloader)
+
+Data:        296 bytes (14.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:55:32 **** Incremental Build of configuration Debug for project MiniProject4 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MiniProject4.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10156 bytes (31.0% Full)
+(.text + .data + .bootloader)
+
+Data:        296 bytes (14.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:56:43 **** Incremental Build of configuration Debug for project MiniProject4 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MiniProject4.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10156 bytes (31.0% Full)
+(.text + .data + .bootloader)
+
+Data:        296 bytes (14.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:56:55 **** Incremental Build of configuration Debug for project MiniProject4 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MiniProject4.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10156 bytes (31.0% Full)
+(.text + .data + .bootloader)
+
+Data:        296 bytes (14.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:57:02 **** Incremental Build of configuration Debug for project MiniProject4 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MiniProject4.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10156 bytes (31.0% Full)
+(.text + .data + .bootloader)
+
+Data:        296 bytes (14.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:57:06 **** Incremental Build of configuration Debug for project MiniProject4 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MiniProject4.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10156 bytes (31.0% Full)
+(.text + .data + .bootloader)
+
+Data:        296 bytes (14.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:58:22 **** Incremental Build of configuration Debug for project MiniProject4 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MiniProject4.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10156 bytes (31.0% Full)
+(.text + .data + .bootloader)
+
+Data:        296 bytes (14.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:58:47 **** Incremental Build of configuration Debug for project MiniProject4 ****
+make all 
+Building file: ../Ultrasonic.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"Ultrasonic.d" -MT"Ultrasonic.o" -c -o "Ultrasonic.o" "../Ultrasonic.c"
+In file included from ../Ultrasonic.h:11,
+                 from ../Ultrasonic.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../Ultrasonic.c
+ 
+Building target: MiniProject4.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,MiniProject4.map -mmcu=atmega32 -o "MiniProject4.elf"  ./Project4.o ./Ultrasonic.o ./gpio.o ./icu.o ./lcd.o   
+Finished building target: MiniProject4.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S MiniProject4.elf  >"MiniProject4.lss"
+Finished building: MiniProject4.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex MiniProject4.elf  "MiniProject4.hex"
+Finished building: MiniProject4.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MiniProject4.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10156 bytes (31.0% Full)
+(.text + .data + .bootloader)
+
+Data:        296 bytes (14.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:58:49 **** Incremental Build of configuration Debug for project MiniProject4 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MiniProject4.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10156 bytes (31.0% Full)
+(.text + .data + .bootloader)
+
+Data:        296 bytes (14.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:59:11 **** Incremental Build of configuration Debug for project MiniProject4 ****
+make all 
+Building file: ../Ultrasonic.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"Ultrasonic.d" -MT"Ultrasonic.o" -c -o "Ultrasonic.o" "../Ultrasonic.c"
+In file included from ../Ultrasonic.h:11,
+                 from ../Ultrasonic.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../Ultrasonic.c
+ 
+Building target: MiniProject4.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,MiniProject4.map -mmcu=atmega32 -o "MiniProject4.elf"  ./Project4.o ./Ultrasonic.o ./gpio.o ./icu.o ./lcd.o   
+Finished building target: MiniProject4.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S MiniProject4.elf  >"MiniProject4.lss"
+Finished building: MiniProject4.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex MiniProject4.elf  "MiniProject4.hex"
+Finished building: MiniProject4.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MiniProject4.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10156 bytes (31.0% Full)
+(.text + .data + .bootloader)
+
+Data:        296 bytes (14.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:59:19 **** Incremental Build of configuration Debug for project MiniProject4 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MiniProject4.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10156 bytes (31.0% Full)
+(.text + .data + .bootloader)
+
+Data:        296 bytes (14.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:59:42 **** Incremental Build of configuration Debug for project MiniProject4 ****
+make all 
+Building file: ../Ultrasonic.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"Ultrasonic.d" -MT"Ultrasonic.o" -c -o "Ultrasonic.o" "../Ultrasonic.c"
+In file included from ../Ultrasonic.h:11,
+                 from ../Ultrasonic.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../Ultrasonic.c
+ 
+Building target: MiniProject4.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,MiniProject4.map -mmcu=atmega32 -o "MiniProject4.elf"  ./Project4.o ./Ultrasonic.o ./gpio.o ./icu.o ./lcd.o   
+Finished building target: MiniProject4.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S MiniProject4.elf  >"MiniProject4.lss"
+Finished building: MiniProject4.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex MiniProject4.elf  "MiniProject4.hex"
+Finished building: MiniProject4.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MiniProject4.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9462 bytes (28.9% Full)
+(.text + .data + .bootloader)
+
+Data:         40 bytes (2.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:59:58 **** Incremental Build of configuration Debug for project MiniProject4 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MiniProject4.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9462 bytes (28.9% Full)
+(.text + .data + .bootloader)
+
+Data:         40 bytes (2.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+13:00:01 **** Incremental Build of configuration Debug for project MiniProject4 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MiniProject4.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9462 bytes (28.9% Full)
+(.text + .data + .bootloader)
+
+Data:         40 bytes (2.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+13:00:06 **** Incremental Build of configuration Debug for project MiniProject4 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MiniProject4.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9462 bytes (28.9% Full)
+(.text + .data + .bootloader)
+
+Data:         40 bytes (2.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+13:00:57 **** Incremental Build of configuration Debug for project MiniProject4 ****
+make all 
+Building file: ../Ultrasonic.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"Ultrasonic.d" -MT"Ultrasonic.o" -c -o "Ultrasonic.o" "../Ultrasonic.c"
+In file included from ../Ultrasonic.h:11,
+                 from ../Ultrasonic.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../Ultrasonic.c
+ 
+Building target: MiniProject4.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,MiniProject4.map -mmcu=atmega32 -o "MiniProject4.elf"  ./Project4.o ./Ultrasonic.o ./gpio.o ./icu.o ./lcd.o   
+Finished building target: MiniProject4.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S MiniProject4.elf  >"MiniProject4.lss"
+Finished building: MiniProject4.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex MiniProject4.elf  "MiniProject4.hex"
+Finished building: MiniProject4.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MiniProject4.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10156 bytes (31.0% Full)
+(.text + .data + .bootloader)
+
+Data:        296 bytes (14.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+13:00:59 **** Incremental Build of configuration Debug for project MiniProject4 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MiniProject4.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10156 bytes (31.0% Full)
+(.text + .data + .bootloader)
+
+Data:        296 bytes (14.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+23:39:21 **** Incremental Build of configuration Debug for project MiniProject4 ****
+make all 
+Building file: ../Ultrasonic.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"Ultrasonic.d" -MT"Ultrasonic.o" -c -o "Ultrasonic.o" "../Ultrasonic.c"
+In file included from ../Ultrasonic.h:11,
+                 from ../Ultrasonic.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../Ultrasonic.c
+ 
+Building target: MiniProject4.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,MiniProject4.map -mmcu=atmega32 -o "MiniProject4.elf"  ./Project4.o ./Ultrasonic.o ./gpio.o ./icu.o ./lcd.o   
+Finished building target: MiniProject4.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S MiniProject4.elf  >"MiniProject4.lss"
+Finished building: MiniProject4.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex MiniProject4.elf  "MiniProject4.hex"
+Finished building: MiniProject4.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MiniProject4.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10156 bytes (31.0% Full)
+(.text + .data + .bootloader)
+
+Data:        296 bytes (14.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+23:39:45 **** Incremental Build of configuration Debug for project MiniProject4 ****
+make all 
+Building file: ../Project4.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"Project4.d" -MT"Project4.o" -c -o "Project4.o" "../Project4.c"
+In file included from ../Ultrasonic.h:11,
+                 from ../Project4.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Project4.c:15: warning: return type of 'main' is not 'int'
+Finished building: ../Project4.c
+ 
+Building target: MiniProject4.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,MiniProject4.map -mmcu=atmega32 -o "MiniProject4.elf"  ./Project4.o ./Ultrasonic.o ./gpio.o ./icu.o ./lcd.o   
+Finished building target: MiniProject4.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S MiniProject4.elf  >"MiniProject4.lss"
+Finished building: MiniProject4.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex MiniProject4.elf  "MiniProject4.hex"
+Finished building: MiniProject4.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MiniProject4.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10156 bytes (31.0% Full)
+(.text + .data + .bootloader)
+
+Data:        296 bytes (14.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+23:39:48 **** Incremental Build of configuration Debug for project MiniProject4 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MiniProject4.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10156 bytes (31.0% Full)
+(.text + .data + .bootloader)
+
+Data:        296 bytes (14.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
